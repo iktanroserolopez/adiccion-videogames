@@ -1,0 +1,90 @@
+from flask import Flask
+import random
+
+app = Flask(__name__)
+lista_facto =["La mayoría de las personas que sufren adicción tecnológica experimentan un fuerte estrés cuando se encuentran fuera del área de cobertura de la red o no pueden utilizar sus dispositivos",
+            "Según un estudio realizado en 2018, más del 50% de las personas de entre 18 y 34 años se consideran dependientes de sus smartphones",
+            "El estudio de la dependencia tecnológica es una de las áreas más relevantes de la investigación científica moderna",
+            "Según un estudio de 2019, más del 60% de las personas responden a mensajes de trabajo en sus smartphones en los 15 minutos siguientes a salir del trabajo",
+            "Una forma de combatir la dependencia tecnológica es buscar actividades que aporten placer y mejoren el estado de ánimo",
+            "Elon Musk afirma que las redes sociales están diseñadas para mantenernos dentro de la plataforma, para que pasemos el mayor tiempo posible viendo contenidos",
+            "Elon Musk también aboga por la regulación de las redes sociales y la protección de los datos personales de los usuarios. Afirma que las redes sociales recopilan una enorme cantidad de información sobre nosotros, que luego puede utilizarse para manipular nuestros pensamientos y comportamientos",
+            "Las redes sociales tienen aspectos positivos y negativos, y debemos ser conscientes de ambos cuando utilicemos estas plataformas"]
+page1="""
+<head>
+    <title>El caos tecnologico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1>Adicción a los videojuegos</h1>
+    
+    <p>Ha habido que esperar hasta 2022 para que la Organización Mundial de la Salud (OMS) declare oficialmente la Adicción a los videojuegos como una enfermedad que se puede reconocer, diagnosticar y tratar. La industria del videojuego es la que más rápidamente crece, con millones de jugadores en el mundo. </p>
+    <h1><img src ="img.jpg" alt="Image"></h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4238.224934660652!2d-75.53070456400957!3d10.416426406057502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f7daf355b19%3A0x7a35768feb39758e!2sSportline%20Caribe%20Plaza!5e0!3m2!1ses-419!2sco!4v1723681068732!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class= " meteoro" src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&humidity=1&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=dark"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/ip_romania_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+    <h2>¿Qué es la adicción a los videojuegos?</h2>
+
+    <p>La definición de Adicción a los videojuegos o el Trastorno de juego por internet consiste en un patrón de juego persistente y recurrente que provoca un deterioro o malestar clínicamente significativo durante un periodo mínimo de un año. Esta adicción no se define por el número de horas que se juega a los videojuegos al día o a la semana, como muchos padres nos preguntan. Se define por las consecuencias y repercusión que tiene en las distintas áreas de funcionamiento de la persona.</p>
+    <h3>¿Cuáles son los síntomas para reconocer una adicción a los videojuegos?</h3>
+    <ul>
+        <li>Dificultad para evitar jugar cuando tienen obligaciones que atender.</li>
+        <li>Dificultad para terminar el juego tras un tiempo considerable. </li>
+        <li>Ansiedad y ansia por jugar.</li>
+        <li>Síntomas de abstinencia cuando llevan mucho tiempo sin jugar.</li>
+        <li>Abandono gradual de otras actividades (hasta el punto de llegar a ausentarse de su puesto de trabajo, no acudir a la escuela o perder relaciones sentimentales por anteponer el videojuego a todo lo demás).</li>
+    
+    
+    </ul>
+    <h4>¿La adicción a los videojuegos es una enfermedad?</h4>
+    <h1><img src="juegos.webp" alt="Image"></h1>
+    <h5>Según la Organización Mundial de la Salud</h5>
+    <p>
+        La Clasificación Internacional de Enfermedades en su undécima edición (CIE-11) publicada por la OMS este año 2022 incluye el Trastorno por videojuegos para referirse a la adicción a juegos digitales o videojuegos, ya sean o no online. La OMS lo define como un patrón de comportamiento caracterizado por la falta de control sobre el videojuego. Esta falta de control se ve reflejada en la dificultad para priorizar otras actividades frente al juego, anteponiendo este último a otras obligaciones diarias. El tiempo dedicado a videojuegos se incrementa gradualmente o se mantiene a pesar de las consecuencias negativas.
+    <h6> Según la Asociación Americana de Psiquiatría</h6>
+    <p>Por su parte, la otra clasificación de trastornos mentales que empleamos los psiquiatras, el DSM-5 o DSM V publicado en 2013 por la Asociación Psiquiátrica Americana (APA) no reconoce oficialmente la adicción a videojuegos, pero la considera “una afección que necesita más estudio”. Identifica cuáles serían los posibles criterios diagnósticos utilizados si en la próxima edición del DSM se incluye también este problema como un diagnóstico del apartado Trastornos relacionado con sustancias y otros trastornos adictivos.
+        
+        La principal diferencia entre los dos sistemas de clasificación internacionales es que la CIE-11 (OMS) sí reconoce oficialmente la adicción a los videojuegos como una enfermedad y el DSM-5 (APA) todavía no. Hay que tener en cuenta que el DSM se publicó más de un lustro antes. La segunda gran diferencia es que la OMS incluye tanto los videojuegos que se juegan en línea como los que no (Trastorno por videojuegos) y la APA solo incluye a los juegos online (Trastorno de juego por internet).</p>
+    <h2>¿la tecnologia es una adiccion?</h2>
+    <p>MIRALO TU MISMO</p>
+    
+    
+    <ul>
+        <li><a href="https://youtu.be/lOoLmGcnBfU">adiccion</a></li>
+        <li> <a href="https://youtu.be/q6Gp3WubW4E">adiccion</a></li>
+    </ul>
+    
+    <h2>mensajes para ponerte a ver</h2>
+    <p><li><img src="mensa.jpeg" alt="mensaje"></li></p>
+    <p><li><img src="riesgos.jpg" alt="riesgos"></li></p>
+    <p><li><img src="exclavitud.jpg" alt="exclavitud"></li></p>
+    <h3>Consecuencias del uso excesivo de los videojuegos</h3>
+    <ul>
+        <li>salud mental: irritabilidad, depresión, ansiedad, problemas de sueño, TDAH, adicción a videojuegos.</li>
+        <li>salud física: problemas de visión, lesiones musculares o tendinosas, deprivación de sueño</li>
+        <li>alteraciones del comportamiento: conductas desafiantes o violentas.</li>
+        <li>problemas de funcionamiento: función cognitiva, problemas familiares, sociales, académicos o ocupacionales.</li>
+    </ul>
+    
+</body>
+</html>
+
+"""
+@app.route("/")
+def hello_world():
+     return f" <h1>TEXTO A LEATORIO </h1><h2>{random.choice(lista_facto)}</h2> <a href='/redes_adictivas'>¡Ver las plataformas más adictivas!</a> <a href='/problemas'>¡aaqui</a>"
+@app.route('/redes_adictivas')
+def redes_adictivas():
+    return f'verlas plataformas mas adictivas'
+@app.route('/problemas')
+def problemas():
+    return page1
+
+
+
+
+app.run(debug=True)
